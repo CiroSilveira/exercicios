@@ -7,17 +7,30 @@
     <style>
         table {
             border-collapse: collapse;
+            position: relative;
+            width: 500px;
+            height: 700px;
         }
 
         th {
             border: 1px solid black;
             padding: 10px;
-            background-color: lightgray;
+            background-color: darkgray;
         }
 
         td {
             border: 1px solid black;
-            padding: 10px;
+            padding: 5px;
+            height: 50px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -26,6 +39,11 @@
 
         td.pos {
             text-align: center;
+            width: 5px;
+        }
+
+        tfoot > tr > td {
+            text-align: right;
         }
     </style>
 </head>
@@ -44,9 +62,11 @@
     
     <table>
         <thead>
-            <th>Posição</th>
-            <th>Unidade Federativa</th>
-            <th>População</th>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
@@ -186,9 +206,10 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Quantidade total</th>
-            <td></td>
-            <td><strong>203 078 389</strong></td>
+            <tr>
+                <th scope="row" colspan="2">Quantidade total</th>
+                <td><strong>203 078 389</strong></td>
+            </tr>
         </tfoot>
     </table>
 </body>
