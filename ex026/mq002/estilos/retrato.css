@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
 /*portrait*/
+
+body {
+    background: #233eff url(../imagens/cev-portrait.jpg) center bottom no-repeat fixed;
+    background-size: contain;
+}
+/* Shorthand - Background
+    color > image > position > repeat > [size] > attachment
+*/
