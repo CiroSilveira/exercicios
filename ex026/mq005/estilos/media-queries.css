@@ -16,14 +16,24 @@ Extra large screens, TV – 1201px, and more.
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) { /* Tablets */
+@media screen and (min-width: 769px) { /* Tablets em diante */
+    span#burguer {
+        display: none;
+    }
 
+    menu {
+        display: block;
+    }
+
+    menu > ul {
+        background-color: #949494;
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px) { /* Desktop */
-
-}
-
-@media screen and (min-width: 1201px) { /* Grandes telas */
-
-}

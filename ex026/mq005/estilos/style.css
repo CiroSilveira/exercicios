@@ -14,10 +14,6 @@ html, body {
     width: 100vw;
 }
 
-menu {
-    display: none;
-}
-
 header h1 {
     background-color: #949494;
     padding: 10px;
@@ -37,10 +33,13 @@ span#burguer {
 span#burguer:hover {
     background-color: white;
     color: black;
-
 }
 
-ul {
+menu {
+    display: none;
+}
+
+menu > ul {
     background-color: #303030;
 }
 
